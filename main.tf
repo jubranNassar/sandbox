@@ -17,6 +17,6 @@ resource "spacelift_stack" "sandbox-child" {
   repository        = "sandbox"
   space_id = "legacy-child-01GXBM7578FN4Z5XY17T30DNZV"
   github_enterprise {
-    namspace = "jubrannassar"
+    namespace = "jubrannassar"
   }
 }

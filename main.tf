@@ -10,3 +10,10 @@ terraform {
 provider "spacelift" {
   # Configuration options
 }
+
+resource "spacelift_stack" "sandbox-child" {
+  branch            = "main"
+  name              = "example"
+  repository        = "sandbox"
+  space_id = "legacy-child-01GXBM7578FN4Z5XY17T30DNZV"
+}

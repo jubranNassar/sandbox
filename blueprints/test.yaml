@@ -44,7 +44,6 @@ stack:
   local_preview_enabled: true
   protect_from_deletion: false
   runner_image: public.ecr.aws/mycorp/spacelift-runner:latest
-  worker_pool: 01GQ29K8SYXKZVHPZ4HG00BK2E
   attachments:
     contexts:
       - id: my-first-context-vnfq2

@@ -21,3 +21,5 @@ resource "spacelift_stack" "mercedez-benz" {
     namespace = "jubranNassar"
   }
 }
+
+

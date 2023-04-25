@@ -23,3 +23,9 @@ resource "spacelift_stack" "mercedez-benz" {
 }
 
 
+resource "spacelift_blueprint" "test-blueprint" {
+  name = "test-blueprint"
+  space = "legacy"
+  state = "DRAFT"
+  template = "./blueprints/test.yaml"  
+}

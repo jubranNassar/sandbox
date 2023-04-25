@@ -27,5 +27,5 @@ resource "spacelift_blueprint" "test-blueprint" {
   name = "test-blueprint"
   space = "legacy"
   state = "DRAFT"
-  template = "./blueprints/test.yaml"  
+  template = file("./blueprints/test.yaml")
 }

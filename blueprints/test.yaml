@@ -27,7 +27,7 @@ options:
   trigger_run: true
 stack:
   name: ${{ inputs.app }}-{{ inputs.environment }}-stack
-  space: root
+  space: legacy
   # The single-quote is needed to avoid YAML parsing errors since the question mark
   # and the colon is a reserved character in YAML.
   description: '${{ inputs.environment == "prod" ? "Production stack" : "Non-production stack" }}. Stack created at ${{ string(context.time) }}.'
@@ -46,7 +46,7 @@ stack:
   runner_image: public.ecr.aws/mycorp/spacelift-runner:latest
   attachments:
     contexts:
-      - id: my-first-context-vnfq2
+      - id: linux-dev
         priority: 1
     clouds:
       aws:

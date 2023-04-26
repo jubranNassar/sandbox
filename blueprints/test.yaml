@@ -121,13 +121,3 @@ stack:
       version: ${{ inputs.tf_version }}
       workspace: workspace-${{ inputs.environment }}
       use_smart_sanitization: ${{ inputs.environment != 'prod' }}
-    cloudformation:
-      entry_template_file: cf/main.yml
-      template_bucket: template_bucket
-      stack_name: ${{ inputs.app }}-${{ inputs.environment }}
-      region: '${{ inputs.environment.contains("prod") ? "us-east-1" : "us-east-2" }}'
-    kubernetes:
-      namespace: ${{ inputs.app }}
-    pulumi:
-      stack_name: ${{ inputs.app }}-${{ inputs.environment }}
-      login_url: https://app.pulumi.com

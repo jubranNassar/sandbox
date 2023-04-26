@@ -112,7 +112,7 @@ stack:
   vcs:
     branch: main
     project_root: modules/apps/${{ inputs.app }}
-    namespace: "my-namespace"
+    namespace: "jubranNassar"
     # Note that this is just the name of the repository, not the full URL
     repository: my-repository
     provider: GITHUB_ENTERPRISE # Possible values: GITHUB, GITLAB, BITBUCKET_DATACENTER, BITBUCKET_CLOUD, GITHUB_ENTERPRISE, AZURE_DEVOPS
@@ -122,8 +122,6 @@ stack:
       version: ${{ inputs.tf_version }}
       workspace: workspace-${{ inputs.environment }}
       use_smart_sanitization: ${{ inputs.environment != 'prod' }}
-    ansible:
-      playbook: playbook.yml
     cloudformation:
       entry_template_file: cf/main.yml
       template_bucket: template_bucket

@@ -111,10 +111,9 @@ stack:
       timestamp_unix: ${{ inputs.destroy_task_epoch - 86400 }}
   vcs:
     branch: main
-    project_root: modules/apps/${{ inputs.app }}
     namespace: "jubranNassar"
     # Note that this is just the name of the repository, not the full URL
-    repository: my-repository
+    repository: sandbox
     provider: GITHUB_ENTERPRISE # Possible values: GITHUB, GITLAB, BITBUCKET_DATACENTER, BITBUCKET_CLOUD, GITHUB_ENTERPRISE, AZURE_DEVOPS
   vendor:
     terraform:

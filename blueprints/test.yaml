@@ -26,7 +26,7 @@ options:
   # If true, a tracked run will be triggered right after the stack is created
   trigger_run: true
 stack:
-  name: ${{ inputs.app }}-{{ inputs.environment }}-stack
+  name: ${{ inputs.app }}-${{ inputs.environment }}-stack
   space: legacy
   # The single-quote is needed to avoid YAML parsing errors since the question mark
   # and the colon is a reserved character in YAML.

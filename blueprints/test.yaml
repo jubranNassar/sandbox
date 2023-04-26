@@ -54,8 +54,8 @@ stack:
         read: true
         write: true
     policies:
-      - my-push-policy-1
-      - my-approval-policy-1
+      - instance-type-policy
+      - simple-approval
   environment:
     variables:
       - name: MY_ENV_VAR

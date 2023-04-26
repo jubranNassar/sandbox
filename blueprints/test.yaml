@@ -65,13 +65,6 @@ stack:
         value: my-secret-env-var-value
         description: This is my encrypted env var
         secret: true
-    mounted_files:
-      - path: a.json
-        content: |
-          {
-            "a": "b"
-          }
-        description: This is the configuration of x feature
   hooks:
     apply:
       before: ["sh", "-c", "echo 'before apply'"]

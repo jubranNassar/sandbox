@@ -2,6 +2,8 @@ inputs:
   - id: environment
     name: Environment to deploy to
     # type is not mandatory, defaults to short_text
+  - id: repository
+    name: Git repo
   - id: app
     name: App name (used for naming convention)
     type: short_text
@@ -106,7 +108,7 @@ stack:
     branch: main
     namespace: "jubranNassar"
     # Note that this is just the name of the repository, not the full URL
-    repository: sandbox
+    repository: ${{ inputs.repository }}
     provider: GITHUB_ENTERPRISE # Possible values: GITHUB, GITLAB, BITBUCKET_DATACENTER, BITBUCKET_CLOUD, GITHUB_ENTERPRISE, AZURE_DEVOPS
   vendor:
     terraform:

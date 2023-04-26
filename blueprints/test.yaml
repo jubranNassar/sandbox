@@ -109,6 +109,13 @@ stack:
     delete:
       delete_resources: ${{ inputs.environment == 'prod' }}
       timestamp_unix: ${{ inputs.destroy_task_epoch - 86400 }}
+  vcs:
+    branch: main
+    project_root: modules/apps/${{ inputs.app }}
+    namespace: "my-namespace"
+    # Note that this is just the name of the repository, not the full URL
+    repository: my-repository
+    provider: GITHUB # Possible values: GITHUB, GITLAB, BITBUCKET_DATACENTER, BITBUCKET_CLOUD, GITHUB_ENTERPRISE, AZURE_DEVOPS
   vendor:
     terraform:
       manage_state: ${{ inputs.manage_state }}

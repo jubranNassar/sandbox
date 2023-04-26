@@ -50,14 +50,9 @@ stack:
         priority: 1
     clouds:
       aws:
-        id: 01GQ29K8SYXKZVHPZ4HG00BK2E
+        id: 01GW5M1D8MQPK2Z4Y6QJKATGJ0
         read: true
         write: true
-      azure:
-        id: 01GQ29K8SYXKZVHPZ4HG00BK2E
-        read: true
-        write: true
-        subscription_id: 12345678-1234-1234-1234-123456789012
     policies:
       - my-push-policy-1
       - my-approval-policy-1
@@ -114,13 +109,6 @@ stack:
     delete:
       delete_resources: ${{ inputs.environment == 'prod' }}
       timestamp_unix: ${{ inputs.destroy_task_epoch - 86400 }}
-  vcs:
-    branch: master
-    project_root: modules/apps/${{ inputs.app }}
-    namespace: "my-namespace"
-    # Note that this is just the name of the repository, not the full URL
-    repository: my-repository
-    provider: GITHUB # Possible values: GITHUB, GITLAB, BITBUCKET_DATACENTER, BITBUCKET_CLOUD, GITHUB_ENTERPRISE, AZURE_DEVOPS
   vendor:
     terraform:
       manage_state: ${{ inputs.manage_state }}

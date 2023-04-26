@@ -28,7 +28,4 @@ resource "spacelift_blueprint" "test-blueprint" {
   space = "legacy"
   state = "DRAFT"
   template = file("./blueprints/test.yaml")
-    github_enterprise {
-    namespace = "jubranNassar"
-  }
 }

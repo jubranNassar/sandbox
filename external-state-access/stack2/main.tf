@@ -11,7 +11,7 @@ data "terraform_remote_state" "stack1" {
     organization = "my-first-env"
 
     workspaces = {
-      name = "stack1"
+      name = "external-state-1"
     }
   }
 }

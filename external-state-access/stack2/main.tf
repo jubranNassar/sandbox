@@ -8,7 +8,7 @@ data "terraform_remote_state" "stack1" {
 
   config = {
     hostname     = "spacelift.io"
-    organization = "msamendinger"
+    organization = "my-first-env"
 
     workspaces = {
       name = "stack1"

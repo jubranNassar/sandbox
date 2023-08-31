@@ -33,3 +33,6 @@ resource "spacelift_blueprint" "test-blueprint" {
 resource "random_string" "test-2" {
   length = 10
 }
+resource "random_string" "test-1" {
+  length = 10
+}

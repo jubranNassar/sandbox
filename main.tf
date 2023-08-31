@@ -29,4 +29,3 @@ resource "spacelift_blueprint" "test-blueprint" {
   state = "PUBLISHED"
   template = file("./blueprints/test.yaml")
 }
-

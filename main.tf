@@ -30,6 +30,3 @@ resource "spacelift_blueprint" "test-blueprint" {
   template = file("./blueprints/test.yaml")
 }
 
-resource "random_string" "test-2" {
-  length = 10
-}

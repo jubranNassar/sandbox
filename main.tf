@@ -29,3 +29,7 @@ resource "spacelift_blueprint" "test-blueprint" {
   state = "PUBLISHED"
   template = file("./blueprints/test.yaml")
 }
+
+resource "random_string" "test-1" {
+  length = 10
+}

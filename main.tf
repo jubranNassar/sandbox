@@ -33,7 +33,6 @@ resource "spacelift_stack" "test" {
   }
 }
 
-
 resource "spacelift_blueprint" "test-blueprint" {
   name = "test-blueprint"
   space = "legacy"

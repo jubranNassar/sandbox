@@ -22,16 +22,16 @@ resource "spacelift_stack" "mercedez-benz" {
   }
 }
 
-resource "spacelift_stack" "test" {
-  branch            = "main"
-  name              = "mercedes-benz"
-  project_root      = "mercedes"
-  repository        = "sandbox"
-  terraform_version = "1.3.10"
-  github_enterprise {
-    namespace = "jubranNassar"
-  }
-}
+# resource "spacelift_stack" "test" {
+#   branch            = "main"
+#   name              = "mercedes-benz"
+#   project_root      = "mercedes"
+#   repository        = "sandbox"
+#   terraform_version = "1.3.10"
+#   github_enterprise {
+#     namespace = "jubranNassar"
+#   }
+# }
 
 resource "spacelift_blueprint" "test-blueprint" {
   name = "test-blueprint"

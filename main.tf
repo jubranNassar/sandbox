@@ -39,3 +39,22 @@ resource "spacelift_blueprint" "test-blueprint" {
   state = "PUBLISHED"
   template = file("./blueprints/test.yaml")
 }
+
+resource "spacelift_space" "level-one" {
+    name = "level-one"
+    inherit_entities = true
+}
+
+
+resource "spacelift_space" "level-two" {
+    name = "level-two"
+    inherit_entities = true
+    parent_space_id = spacelift_space.level-one.id
+}
+
+
+resource "spacelift_space" "level-three" {
+    name = "level-three"
+    inherit_entities = true
+    parent_space_id = spacelift_space.level-two.id
+}

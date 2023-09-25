@@ -32,4 +32,5 @@ module "my_workerpool" {
   spacelift_api_key_endpoint = var.spacelift_api_key_endpoint
   spacelift_api_key_id = var.spacelift_api_key_id
   spacelift_api_key_secret = var.spacelift_api_key_secret
+  local_path = var.local_path
 }

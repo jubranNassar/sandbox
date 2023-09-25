@@ -32,5 +32,5 @@ variable "spacelift_api_key_secret" {
 
 variable "local_path" {
     type = string
-    default = "/mnt/workspace/source/worker-pool-test"
+    default = "/mnt/workspace/source/worker-pool-test/test"
 }

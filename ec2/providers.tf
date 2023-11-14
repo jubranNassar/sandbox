@@ -7,14 +7,14 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = "us-east-1"
-}
-
 # provider "aws" {
 #   region = "us-east-1"
-#   assume_role {
-#     role_arn = "arn:aws:iam::657848498343:role/assume-role"
-#     session_name = var.spacelift_run_id
-#   }
 # }
+
+provider "aws" {
+  region = "us-east-1"
+  assume_role {
+    role_arn = "arn:aws:iam::657848498343:role/assume-role"
+    session_name = var.spacelift_run_id
+  }
+}

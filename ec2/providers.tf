@@ -15,6 +15,6 @@ provider "aws" {
   region = "us-east-1"
   assume_role {
     role_arn = "arn:aws:iam::657848498343:role/assume-role"
-    session_name = spacelift_run_id
+    session_name = var.spacelift_run_id
   }
 }

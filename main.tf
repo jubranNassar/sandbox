@@ -34,27 +34,27 @@ resource "spacelift_stack" "test" {
 }
 
 resource "spacelift_blueprint" "test-blueprint" {
-  name = "test-blueprint"
-  space = "legacy"
-  state = "PUBLISHED"
+  name     = "test-blueprint"
+  space    = "legacy"
+  state    = "PUBLISHED"
   template = file("./blueprints/test.yaml")
 }
 
 resource "spacelift_space" "level-one" {
-    name = "level-one"
-    inherit_entities = true
+  name             = "level-one"
+  inherit_entities = true
 }
 
 
 resource "spacelift_space" "level-two" {
-    name = "level-two"
-    inherit_entities = true
-    parent_space_id = spacelift_space.level-one.id
+  name             = "level-two"
+  inherit_entities = true
+  parent_space_id  = spacelift_space.level-one.id
 }
 
 
 resource "spacelift_space" "level-three" {
-    name = "level-three"
-    inherit_entities = true
-    parent_space_id = spacelift_space.level-two.id
+  name             = "level-three"
+  inherit_entities = true
+  parent_space_id  = spacelift_space.level-two.id
 }

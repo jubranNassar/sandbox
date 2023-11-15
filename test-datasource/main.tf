@@ -10,5 +10,5 @@ terraform {
 provider "spacelift" {}
 
 data "spacelift_space_by_path" "test" {
-  space_path = "root/level-one/level-two"
+  space_path = "root/demo-resources/demo-resources-child"
 }

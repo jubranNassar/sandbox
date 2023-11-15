@@ -10,5 +10,5 @@ terraform {
 provider "spacelift" {}
 
 data "spacelift_space_by_path" "test" {
-  space_path = "root/level-one/level-two/level-three"
+  space_path = "root/level-one-01HAWPE18Q57B3Q58E8Z24B4FH"
 }

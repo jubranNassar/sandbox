@@ -10,5 +10,5 @@ terraform {
 provider "spacelift" {}
 
 data "spacelift_space_by_path" "test" {
-  space_path = "path/to/space"
+  space_path = "root/to/space"
 }

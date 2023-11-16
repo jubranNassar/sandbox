@@ -1,17 +1,8 @@
 resource "aws_instance" "test-instance" {
-    instance_type = var.instance_type
-    ami = data.aws_ami.dev_server_ami.id
-    tags = {
-      name = "test-instance"
-    }
-}
-
-terraform {
-  required_providers {
-    spacelift = {
-      source  = "spacelift-io/spacelift"
-      version = "1.6.0"
-    }
+  instance_type = var.instance_type
+  ami           = data.aws_ami.dev_server_ami.id
+  tags = {
+    name = "test-instance"
   }
 }
 
@@ -22,5 +13,5 @@ data "spacelift_space_by_path" "test" {
 }
 
 output "this" {
-    value = data.spacelift_space_by_path.test.id
+  value = data.spacelift_space_by_path.test.id
 }

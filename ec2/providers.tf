@@ -1,12 +1,8 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "5.25.0"
-    }
-    spacelift = {
-      source  = "spacelift-io/spacelift"
-      version = "1.6.0"
+        source = "hashicorp/aws"
+        version = "5.25.0"
     }
   }
 }

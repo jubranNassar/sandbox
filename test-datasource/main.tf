@@ -12,3 +12,7 @@ provider "spacelift" {}
 data "spacelift_space_by_path" "test" {
   space_path = "root/demo-resources"
 }
+
+output "this" {
+    value = data.spacelift_space_by_path.test.id
+}

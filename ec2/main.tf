@@ -6,3 +6,4 @@ resource "aws_instance" "test-instance" {
       workspace = var.spacelift_run_id
     }
 }
+

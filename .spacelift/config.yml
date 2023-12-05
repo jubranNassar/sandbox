@@ -1,0 +1,4 @@
+version: "1"
+
+stack_defaults:
+    terragrunt_version: 0.53.8

@@ -2,5 +2,5 @@ version: "1"
 
 stacks:
     terragrunt-test:
-      terragrunt_version: 0.46.3
-      terraform_version: 1.4.4
+      terragrunt_version: "0.46.3"
+      terraform_version: "1.4.4"

@@ -1,4 +1,5 @@
 version: "1"
 
-stack_defaults:
-    terragrunt_version: 0.46.3
+stacks:
+    terragrunt-test:
+      terragrunt_version: 0.46.3

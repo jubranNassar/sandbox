@@ -15,6 +15,13 @@ module "eks" {
       uesrname = "jubran"
     }
   ]
+
+  aws_auth_users = [
+    {
+      userarn  = "arn:aws:iam::657848498343:role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44",
+      uesrname = "jubran"
+    }
+  ]
   aws_auth_accounts = ["657848498343"]
 
   cluster_addons = {

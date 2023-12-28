@@ -9,6 +9,13 @@ module "eks" {
 
   manage_aws_auth_configmap = true
 
+  aws_auth_users = [
+    {
+      userarn  = "arn:aws:iam::023938408614:root",
+      uesrname = "jubran"
+    }
+  ]
+
   aws_auth_accounts = ["023938408614"]
 
   cluster_addons = {

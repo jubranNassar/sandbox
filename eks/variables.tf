@@ -1,5 +1,5 @@
 variable "subnet_ids" {
-  default = ["subnet-03a84133c161f5a67", "subnet-04d198ec1dc6ee9c5"]
+  default = ["subnet-02378ce006d1fc0cb", "subnet-04b532339305c56c2"]
 }
 
 variable "cluster_name" {

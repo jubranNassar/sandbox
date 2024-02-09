@@ -1,4 +1,4 @@
-output "this" {
+output "urls" {
     value = {
   "private_health" = "https://sms-audit.api.io.qa.velocify.net/health"
   "private_info" = "https://sms-audit.api.io.qa.velocify.net/info"

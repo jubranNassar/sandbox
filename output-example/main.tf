@@ -22,7 +22,7 @@ terraform {
   }
   backend "s3" {
     bucket = "jubran-terraform-backend"
-    key    = "tfstate/"
+    key    = "tfstate"
     region = "us-east-1"
   }
 }

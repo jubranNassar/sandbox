@@ -11,7 +11,7 @@ module "eks" {
 
   aws_auth_users = [
     {
-      userarn  = "AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
+      userarn  = "arn:aws:iam::657848498343:assumed-role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
       uesrname = "jubran"
     }
   ]

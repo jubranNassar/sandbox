@@ -1,7 +1,7 @@
 variable "subnet_ids" {
-  default = ["subnet-02378ce006d1fc0cb", "subnet-04b532339305c56c2"]
+  type = list(string)
 }
 
 variable "cluster_name" {
-  default = "dev-cluster"
+  type = string
 }

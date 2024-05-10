@@ -11,12 +11,12 @@ module "eks" {
 
   aws_auth_users = [
     {
-      userarn  = "arn:aws:iam::023938408614:root",
+      userarn  = "AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
       uesrname = "jubran"
     }
   ]
 
-  aws_auth_accounts = ["023938408614"]
+  aws_auth_accounts = ["657848498343"]
 
   cluster_addons = {
     coredns = {

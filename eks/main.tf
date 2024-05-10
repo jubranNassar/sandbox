@@ -7,7 +7,7 @@ module "eks" {
   control_plane_subnet_ids       = var.subnet_ids
   cluster_endpoint_public_access = true
 
-  manage_aws_auth_configmap = true
+  # manage_aws_auth_configmap = true
 
   # aws_auth_users = [
   #   {
@@ -16,7 +16,7 @@ module "eks" {
   #   }
   # ]
 
-  aws_auth_accounts = ["657848498343"]
+  # aws_auth_accounts = ["657848498343"]
 
   cluster_addons = {
     coredns = {

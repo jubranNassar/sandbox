@@ -9,12 +9,12 @@ module "eks" {
 
   manage_aws_auth_configmap = true
 
-  aws_auth_users = [
-    {
-      userarn  = "AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
-      uesrname = "jubran"
-    }
-  ]
+  # aws_auth_users = [
+  #   {
+  #     userarn  = "AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
+  #     uesrname = "jubran"
+  #   }
+  # ]
 
   aws_auth_accounts = ["657848498343"]
 

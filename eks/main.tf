@@ -9,25 +9,24 @@ module "eks" {
 
   manage_aws_auth_configmap = true
 
-  aws_auth_users = [
-    {
-      userarn  = "arn:aws:iam::657848498343:assumed-role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
-      uesrname = "jubran"
-    },
-    {
-      userarn = "arn:aws:iam::657848498343:role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44",
-      userarn = "jubran2"
-    }
-  ]
+  # aws_auth_users = [
+  #   {
+  #     userarn  = "arn:aws:iam::657848498343:assumed-role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44/jubrann@spacelift.io",
+  #     uesrname = "jubran"
+  #   },
+  #   {
+  #     userarn = "arn:aws:iam::657848498343:role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44",
+  #     userarn = "jubran2"
+  #   }
+  # ]
 
   aws_auth_roles = [
     {
       rolearn = "arn:aws:iam::657848498343:role/AWSReservedSSO_AWSAdministratorAccess_3f3b6cc7551cce44",
-      uesrname = "jubran"
+      username = "jubran",
+      groups = ["system:masters"]
     }
   ]
-  
-  aws_auth_accounts = ["657848498343"]
 
   cluster_addons = {
     coredns = {

@@ -11,6 +11,6 @@ stack_defaults:
 stacks:
     # The key of is the immutable slug of your stack
     # which you will find in the URL.
-    sandbox:
-        before_init:
-            - echo "this is from stack specific config"
+    # sandbox:
+        # before_init:
+        #     - echo "this is from stack specific config"

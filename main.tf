@@ -58,3 +58,5 @@ resource "spacelift_space" "level-three" {
   inherit_entities = true
   parent_space_id  = spacelift_space.level-two.id
 }
+
+

@@ -12,15 +12,15 @@ provider "aws" {
 }
 
 
-resource "aws_s3_bucket" "jubran-wadwd2qawdwa-bucekt" {
-    bucket = "jubran-wadwd2qawdwa-bucekt"
-}
+# resource "aws_s3_bucket" "jubran-wadwd2qawdwa-bucekt" {
+#     bucket = "jubran-wadwd2qawdwa-bucekt"
+# }
 
 
-import {
-  id = "jubran-wadwd2qawdwa-bucekt"
-  to = aws_s3_bucket.jubran-wadwd2qawdwa-bucekt
-}
+# import {
+#   id = "jubran-wadwd2qawdwa-bucekt"
+#   to = aws_s3_bucket.jubran-wadwd2qawdwa-bucekt
+# }
 
 
 moved {

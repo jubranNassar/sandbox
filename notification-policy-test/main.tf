@@ -23,7 +23,6 @@ provider "aws" {
 # }
 
 
-moved {
+removed {
   from = aws_s3_bucket.jubran-wadwd2qawdwa-bucekt
-  to = aws_s3_bucket.jubran-wadwd2qawdwa-bucket
 }

@@ -1,7 +1,7 @@
 data "spacelift_ips" "ips" {}
 
 output "ips" {
-    value = data.spacelift_ips.ips
+  value = data.spacelift_ips.ips
 }
 
 terraform {

@@ -13,5 +13,5 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "test" {
-    bucket = "moodys-test-bucket"
+  bucket = "moodys-test-bucket"
 }

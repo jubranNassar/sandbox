@@ -13,7 +13,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "jubran-wadwd2qawdwa-bucekt" {
-    bucket = "jubran-wadwd2qawdwa-bucekt"
+  bucket = "jubran-wadwd2qawdwa-bucekt"
 }
 
 

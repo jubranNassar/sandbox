@@ -14,5 +14,5 @@ data "spacelift_space_by_path" "test" {
 }
 
 output "this" {
-    value = data.spacelift_space_by_path.test.id
+  value = data.spacelift_space_by_path.test.id
 }

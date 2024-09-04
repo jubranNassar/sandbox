@@ -5,7 +5,7 @@ terraform {
       version = "~> 4.57.0"
     }
     spacelift = {
-      source = "spacelift-io/spacelift"
+      source  = "spacelift-io/spacelift"
       version = "1.3.0"
     }
   }
@@ -24,12 +24,12 @@ module "my_workerpool" {
     export SPACELIFT_POOL_PRIVATE_KEY="${var.worker_pool_private_key}"
   EOT
 
-  min_size          = 1
-  max_size          = 5
-  worker_pool_id    = var.worker_pool_id
-  security_groups   = var.worker_pool_security_groups
-  vpc_subnets       = var.worker_pool_subnets
+  min_size                   = 1
+  max_size                   = 5
+  worker_pool_id             = var.worker_pool_id
+  security_groups            = var.worker_pool_security_groups
+  vpc_subnets                = var.worker_pool_subnets
   spacelift_api_key_endpoint = var.spacelift_api_key_endpoint
-  spacelift_api_key_id = var.spacelift_api_key_id
-  spacelift_api_key_secret = var.spacelift_api_key_secret
+  spacelift_api_key_id       = var.spacelift_api_key_id
+  spacelift_api_key_secret   = var.spacelift_api_key_secret
 }

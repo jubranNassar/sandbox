@@ -1,3 +1,3 @@
-output "cluster-name" {
+output "cluster_name" {
   value = var.cluster_name
 }
